@@ -1,0 +1,12 @@
+file_format: "1"
+id: xploded
+name: Xploded
+type: shield
+url: https://keeb.io/
+requires: [nice!nano_v2]
+exposes: [i2c_oled]
+features:
+  - keys
+siblings:
+  - xploded_left
+  - xploded_right

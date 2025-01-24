@@ -1,0 +1,19 @@
+# Copyright (c) 2020 Pete Johanson, Kurtis Lew
+# SPDX-License-Identifier: MIT
+
+if SHIELD_XPLODED_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Xploded board"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_XPLODED_LEFT || SHIELD_XPLODED_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
