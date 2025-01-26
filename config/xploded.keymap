@@ -6,20 +6,73 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
 
 / {
+    macros {
+        q_mark: q_mark {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt RALT &kp KP_N6 &kp KP_N3 &kt RALT>;
+            label = "Q_MARK";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-    &kp ESC         &kp N1       &kp N2         &kp N3          &kp N4          &kp N5      /**/    &kp N6      &kp N7          &kp N8          &kp N9      &kp N0          &kp SPACE
-    &mt CAPS TAB    &mt LCTRL Q  &mt LSHIFT W   &mt LALT E      &mt LGUI R      &mt GRAVE T /**/    &kp Y       &kp U           &mt O I         &kp O       &kp P           &kp C_VOL_UP
-    &kp LG(TAB)     &mt LGUI A   &mt LALT S     &mt LSHIFT D    &mt LCTRL F     &kp G       /**/    &kp H       &mt RCTRL J     &mt RSHIFT K    &mt RALT L  &mt RGUI SEMI   &kp C_PP
-    &kp PSCRN       &kp Z        &kp X          &kp C           &kp V           &kp B       /**/    &kp N       &mt RBKT M      &kp COMMA       &kp DOT     &kp SQT         &kp C_VOL_DN
-                                                &kp SPACE       &kp SPACE       &kp SPACE   /**/    &kp SPACE   &kp SPACE       &kp SPACE
-                                                                &kp SPACE       &kp SPACE   /**/    &kp SPACE   &kp SPACE
+&kp ESC       &mt QMARK EXCL  &kp N2        &kp N3        &kp N4         &kp N5         &kp N6         &kp N7            &kp N8             &kp N9      &kp N0         &kp SPACE
+&mt CAPS TAB  &mt LCTRL Q     &mt LSHIFT W  &mt LALT E    &mt LGUI R     &mt GRAVE T    &kp Y          &kp U             &mt O I            &kp O       &kp P          &kp C_VOL_UP
+&kp LG(TAB)   &mt LGUI A      &mt LALT S    &mt LSHIFT D  &mt LCTRL F    &kp G          &kp H          &mt RCTRL J       &mt RSHIFT K       &mt RALT L  &mt RGUI SEMI  &kp C_PP
+&kp PSCRN     &kp Z           &kp X         &kp C         &kp V          &kp B          &kp N          &mt RBKT M        &kp COMMA          &kp DOT     &kp SQT        &kp C_VOL_DN
+                                            &mo 2         &kp BACKSPACE  &kp DELETE     &kp LA(LSHFT)  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+                                                          &mo 3          &kp ENTER      &tog 4         &kp SPACE
+            >;
+        };
+
+        layer_1 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+                                &trans  &trans    &trans  &trans
+            >;
+        };
+
+        layer_2 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+                                &trans  &trans    &trans  &trans
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+                                &trans  &trans    &trans  &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+                                &trans  &trans    &trans  &trans
             >;
         };
     };
