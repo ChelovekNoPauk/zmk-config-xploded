@@ -22,7 +22,7 @@ include:
   - board: nice_nano_v2
     shield: xploded_left
   - board: nice_nano_v2
-    shield: xploded_righ
+    shield: xploded_right
   - board: nice_nano_v2
     shield: xploded_right
     snippet: zmk-usb-logging
