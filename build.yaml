@@ -27,3 +27,5 @@ include:
     shield: xploded_right
     snippet: zmk-usb-logging
     artifact-name: xploded_right_log
+  - board: nice_nano_v2
+    shield: settings_reset
