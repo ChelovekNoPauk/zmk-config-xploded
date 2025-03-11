@@ -28,4 +28,8 @@ include:
     snippet: zmk-usb-logging
     artifact-name: xploded_right_log
   - board: nice_nano_v2
+    shield: xploded_left
+    snippet: zmk-usb-logging
+    artifact-name: xploded_left_log
+  - board: nice_nano_v2
     shield: settings_reset
