@@ -227,6 +227,11 @@
             bindings = <&sys_reset>;
             key-positions = <0 1 11 10>;
         };
+
+        soft_off {
+            bindings = <&soft_off>;
+            key-positions = <36 37 46 47>;
+        };
     };
 
     behaviors {
