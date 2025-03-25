@@ -8,6 +8,8 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
+&mt { flavor = "tap-preferred"; };
+
 / {
     macros {
         alt_apos: alt_apos {
@@ -122,18 +124,11 @@
             label = "ALT_AT";
         };
 
-        to_ru: lang_change {
+        change_lang: lang_change {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&tog 1 &kp LA(LEFT_SHIFT)>;
             label = "LANG_CHANGE";
-        };
-
-        to_en: to_en {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&tog 0 &kp LA(LEFT_SHIFT)>;
-            label = "TO_EN";
         };
 
         alt_caret: alt_caret {
@@ -195,7 +190,7 @@
         from_ru_to_game: from_ru_to_game {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&tog 4 &kp LA(LEFT_SHIFT)>;
+            bindings = <&tog 1 &tog 4 &kp LA(LEFT_SHIFT)>;
             label = "FROM_RU_TO_GAME";
         };
 
@@ -268,12 +263,12 @@
 
         EN {
             bindings = <
-&kp ESC       &mt QMARK EXCL  &kp LPAR      &kp RPAR      &td_apos_grave 0 0  &alt_quot      &alt_comma  &alt_dot          &mt LS(MINUS) MINUS  &td_col_scol 0 0  &td_slash_bslash 0 KP_SLASH  &alt_at
-&mt CAPS TAB  &mt LCTRL Q     &mt LSHIFT W  &mt LALT E    &mt LGUI R          &mt GRAVE T    &kp Y       &kp U             &mt O I              &kp O             &kp P                        &kp C_VOL_UP
-&kp LG(TAB)   &mt LGUI A      &mt LALT S    &mt LSHIFT D  &mt LCTRL F         &kp G          &kp H       &mt RCTRL J       &mt RSHIFT K         &mt RALT L        &mt RGUI SEMI                &kp C_PP
-&kp PSCRN     &kp Z           &kp X         &kp C         &kp V               &kp B          &kp N       &mt RBKT M        &kp COMMA            &kp DOT           &kp SQT                      &kp C_VOL_DN
-                                            &mo 3         &kp BACKSPACE       &kp DELETE     &to_ru      &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-                                                          &mo 2               &kp ENTER      &tog 4      &kp SPACE
+&kp ESC       &mt QMARK EXCL  &kp LPAR      &kp RPAR      &td_apos_grave 0 0  &alt_quot      &alt_comma    &alt_dot          &mt LS(MINUS) MINUS  &td_col_scol 0 0  &td_slash_bslash 0 KP_SLASH  &alt_at
+&mt CAPS TAB  &mt LCTRL Q     &mt LSHIFT W  &mt LALT E    &mt LGUI R          &mt GRAVE T    &kp Y         &kp U             &mt O I              &kp O             &kp P                        &kp C_VOL_UP
+&kp LG(TAB)   &mt LGUI A      &mt LALT S    &mt LSHIFT D  &mt LCTRL F         &kp G          &kp H         &mt RCTRL J       &mt RSHIFT K         &mt RALT L        &mt RGUI SEMI                &kp C_PP
+&kp PSCRN     &kp Z           &kp X         &kp C         &kp V               &kp B          &kp N         &mt RBKT M        &kp COMMA            &kp DOT           &kp SQT                      &kp C_VOL_DN
+                                            &mo 3         &kp BACKSPACE       &kp DELETE     &change_lang  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+                                                          &mo 2               &kp ENTER      &tog 4        &kp SPACE
             >;
         };
 
@@ -283,7 +278,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans            &trans  &trans          &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans            &trans  &trans          &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans            &trans  &trans          &trans  &trans  &trans
-                        &trans  &trans  &trans    &to_en            &none   &studio_unlock
+                        &trans  &trans  &trans    &change_lang      &none   &studio_unlock
                                 &trans  &trans    &from_ru_to_game  &trans
             >;
         };
