@@ -101,7 +101,7 @@
                 <&macro_press>,
                 <&kp RALT>,
                 <&macro_tap>,
-                <&kp KP_N5 &kp KP_N2>,
+                <&kp KP_N9 &kp KP_N2>,
                 <&macro_release>,
                 <&kp RALT>;
 
@@ -198,6 +198,20 @@
             bindings = <&tog 4 &kp LA(LEFT_SHIFT)>;
             label = "FROM_RU_TO_GAME";
         };
+
+        alt_dot: alt_dot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp KP_N4 &kp KP_NUMBER_6>,
+                <&macro_release>,
+                <&kp RALT>;
+
+            label = "ALT_DOT";
+        };
     };
 
     combos {
@@ -207,6 +221,11 @@
             bindings = <&bootloader>;
             key-positions = <4 5 6 7 8>;
             layers = <0>;
+        };
+
+        rst {
+            bindings = <&sys_reset>;
+            key-positions = <0 1 11 10>;
         };
     };
 
@@ -244,7 +263,7 @@
 
         EN {
             bindings = <
-&kp ESC       &mt QMARK EXCL  &kp LPAR      &kp RPAR      &td_apos_grave 0 0  &alt_quot      &alt_comma  &alt_comma        &mt MINUS LS(MINUS)  &td_col_scol 0 0  &td_slash_bslash 0 KP_SLASH  &alt_at
+&kp ESC       &mt QMARK EXCL  &kp LPAR      &kp RPAR      &td_apos_grave 0 0  &alt_quot      &alt_comma  &alt_dot          &mt LS(MINUS) MINUS  &td_col_scol 0 0  &td_slash_bslash 0 KP_SLASH  &alt_at
 &mt CAPS TAB  &mt LCTRL Q     &mt LSHIFT W  &mt LALT E    &mt LGUI R          &mt GRAVE T    &kp Y       &kp U             &mt O I              &kp O             &kp P                        &kp C_VOL_UP
 &kp LG(TAB)   &mt LGUI A      &mt LALT S    &mt LSHIFT D  &mt LCTRL F         &kp G          &kp H       &mt RCTRL J       &mt RSHIFT K         &mt RALT L        &mt RGUI SEMI                &kp C_PP
 &kp PSCRN     &kp Z           &kp X         &kp C         &kp V               &kp B          &kp N       &mt RBKT M        &kp COMMA            &kp DOT           &kp SQT                      &kp C_VOL_DN
@@ -293,7 +312,7 @@
 &trans  &kp F         &kp A         &kp S         &kp D           &kp G        &kp H   &kp J   &kp K   &kp L   &none   &kp C_PP
 &trans  &kp Z         &kp X         &kp C         &kp V           &kp B        &kp N   &kp M   &none   &none   &none   &kp C_VOL_DN
                                     &kp LEFT_ALT  &kp LS(LSHIFT)  &kp LCTRL    &none   &none   &none
-                                                  &kp SPACE       &kp ENTER    &tog 0  &none
+                                                  &kp SPACE       &kp ENTER    &tog 4  &none
             >;
         };
     };
