@@ -59,10 +59,10 @@
 
         EN {
             bindings = <
-&kp ESC       &mt LS(GRAVE) LS(NUMBER_1)  &mt LS(NUMBER_2) GRAVE  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)    &kp LS(NUMBER_6)  &mt LS(NUMBER_8) LS(NUMBER_7)  &kp APOS           &mt LS(NUMBER_0) NUMBER_9  &kp MINUS      &kp EQUAL
-&mt CAPS TAB  &mt LCTRL Q                 &mt LSHIFT W            &mt LALT E        &mt LGUI R        &kp T               &kp Y             &kp U                          &kp I              &kp O                      &kp P          &kp C_VOL_UP
-&kp LG(TAB)   &mt LGUI A                  &mt LALT S              &mt LSHIFT D      &mt LCTRL F       &kp G               &kp H             &mt RCTRL J                    &mt RSHIFT K       &mt RALT L                 &mt RGUI SEMI  &kp C_PP
-&kp PSCRN     &kp Z                       &kp X                   &kp C             &kp V             &kp B               &kp N             &kp M                          &kp COMMA          &kp DOT                    &kp SLASH      &kp C_VOL_DN
+&kp ESC       &mt LS(GRAVE) LS(NUMBER_1)  &mt LS(NUMBER_2) GRAVE  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)    &kp LS(NUMBER_6)  &mt LS(NUMBER_8) LS(NUMBER_7)  &kp APOS           &mt LS(NUMBER_0) LS(NUMBER_9)  &kp MINUS      &kp EQUAL
+&mt CAPS TAB  &mt LCTRL Q                 &mt LSHIFT W            &mt LALT E        &mt LGUI R        &kp T               &kp Y             &kp U                          &kp I              &kp O                          &kp P          &kp C_VOL_UP
+&kp LG(TAB)   &mt LGUI A                  &mt LALT S              &mt LSHIFT D      &mt LCTRL F       &kp G               &kp H             &mt RCTRL J                    &mt RSHIFT K       &mt RALT L                     &mt RGUI SEMI  &kp C_PP
+&kp PSCRN     &kp Z                       &kp X                   &kp C             &kp V             &kp B               &kp N             &kp M                          &kp COMMA          &kp DOT                        &kp SLASH      &kp C_VOL_DN
                                                                   &mo 3             &kp BACKSPACE     &kp DELETE          &change_lang      &kp LEFT_BRACKET               &kp RIGHT_BRACKET
                                                                                     &mo 2             &kp ENTER           &tog 4            &kp SPACE
             >;
