@@ -74,7 +74,7 @@
 &trans  &trans            &trans            &trans     &trans            &trans    &trans            &trans                         &trans  &kp P   &kp LEFT_BRACKET  &trans
 &trans  &trans            &trans            &trans     &trans            &trans    &trans            &trans                         &trans  &trans  &trans            &trans
 &trans  &trans            &trans            &trans     &trans            &trans    &trans            &mt RIGHT_BRACKET M            &trans  &trans  &kp SINGLE_QUOTE  &trans
-                                            &trans     &trans            &trans    &change_lang      &none                          &none
+                                            &trans     &trans            &trans    &change_lang      &kp SLASH                      &none
                                                        &trans            &trans    &from_ru_to_game  &trans
             >;
         };
