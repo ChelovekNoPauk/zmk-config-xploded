@@ -70,10 +70,10 @@
 
         NUM_FN {
             bindings = <
-&trans  &kp KP_DOT       &kp KP_LEFT_PARENTHESIS  &kp KP_RIGHT_PARENTHESIS  &kp BACKSLASH    &kp PERCENT        &kp F1     &kp F2         &kp F3  &kp F4   &kp F5   &kp F6
-&trans  &kp KP_DIVIDE    &kp KP_N7                &kp KP_N8                 &kp KP_NUMBER_9  &kp KP_SUBTRACT    &kp F7     &kp F8         &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &kp KP_MULTIPLY  &kp KP_N4                &kp KP_N5                 &kp KP_NUMBER_6  &kp KP_PLUS        &none      &none          &none   &none    &none    &none
-&trans  &kp KP_N0        &kp KP_N1                &kp KP_NUMBER_2           &kp KP_NUMBER_3  &kp KP_EQUAL       &none      &none          &none   &none    &none    &none
+&trans  &kp KP_DOT       &kp KP_LEFT_PARENTHESIS  &kp KP_RIGHT_PARENTHESIS  &kp BACKSLASH    &kp PERCENT        &kp F1     &kp F2         &kp F3           &kp F4         &kp F5         &kp F6
+&trans  &kp KP_DIVIDE    &kp KP_N7                &kp KP_N8                 &kp KP_NUMBER_9  &kp KP_SUBTRACT    &kp F7     &kp F8         &kp F9           &kp F10        &kp F11        &kp F12
+&trans  &kp KP_MULTIPLY  &kp KP_N4                &kp KP_N5                 &kp KP_NUMBER_6  &kp KP_PLUS        &none      &kp RCTRL      &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RIGHT_GUI  &none
+&trans  &kp KP_N0        &kp KP_N1                &kp KP_NUMBER_2           &kp KP_NUMBER_3  &kp KP_EQUAL       &none      &none          &none            &none          &none          &none
                                                   &none                     &none            &none              &kp DEL    &kp BACKSPACE  &none
                                                                             &none            &none              &kp ENTER  &kp SPACE
             >;
