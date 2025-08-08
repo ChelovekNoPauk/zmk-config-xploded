@@ -50,12 +50,12 @@
 
         ru {
             bindings = <
-&trans  &kp LC(C)  &mt LC(X) LC(C)  &mt LC(LS(V)) LC(V)  &kp LC(Z)     &kp LC(Y)      &mt F2 F1  &mt F4 F3            &mt F6 F5  &mt F8 F7  &mt F10 F9  &mt F12 F11
-&trans  &kp Q      &kp W            &kp E                &kp R         &mt GRAVE T    &kp Y      &kp U                &kp I      &kp LBKT   &kp P       &trans
-&trans  &kp A      &kp S            &kp D                &kp F         &kp G          &kp H      &kp J                &kp K      &kp L      &kp SEMI    &trans
-&trans  &kp Z      &kp X            &kp C                &kp V         &kp B          &kp N      &mt RIGHT_BRACKET M  &kp COMMA  &kp DOT    &kp FSLH    &trans
-                                    &mo 3                &kp BSPC      &kp DEL        &kp RET    &kp SPACE            &mo 4
-                                                         &kp LC(BSPC)  &none          &tog 5     &change_lang
+&trans  &kp LC(C)       &mt LC(X) LC(C)  &mt LC(LS(V)) LC(V)  &kp LC(Z)     &kp LC(Y)      &mt F2 F1  &mt F4 F3            &mt F6 F5    &mt F8 F7   &mt F10 F9          &mt F12 F11
+&trans  &kp Q           &kp W            &kp E                &kp R         &mt GRAVE T    &kp Y      &kp U                &kp I        &kp LBKT    &kp P               &trans
+&trans  &mt LEFT_GUI A  &mt LALT S       &mt LSHFT D          &mt F LCTRL   &kp G          &kp H      &mt LCTRL J          &mt LSHFT K  &mt LALT L  &mt LGUI SEMICOLON  &trans
+&trans  &kp Z           &kp X            &kp C                &kp V         &kp B          &kp N      &mt RIGHT_BRACKET M  &kp COMMA    &kp DOT     &kp FSLH            &trans
+                                         &mo 3                &kp BSPC      &kp DEL        &kp RET    &kp SPACE            &mo 4
+                                                              &kp LC(BSPC)  &none          &tog 5     &change_lang
             >;
         };
 
