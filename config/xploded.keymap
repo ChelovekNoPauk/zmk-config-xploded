@@ -18,7 +18,7 @@
         change_lang: lang_change {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&tog 2 &kp LA(LEFT_SHIFT)>;
+            bindings = <&tog 2 &kp LG(SPACE)>;
             label = "LANG_CHANGE";
         };
     };
@@ -74,12 +74,12 @@
 
         nav {
             bindings = <
-&trans  &kp LC(A)  &mt LC(X) LC(C)  &mt LC(LS(V)) LC(V)  &kp LC(Z)     &kp LC(Y)    &none      &kp U          &kp RSHFT  &kp O     &kp G     &none
-&trans  &none      &none            &kp UP               &none         &kp PG_UP    &kp COMMA  &kp SEMICOLON  &kp I      &kp SQT   &kp C     &none
-&trans  &kp HOME   &kp LEFT         &kp DOWN             &kp RIGHT     &kp END      &kp M      &kp J          &kp K      &kp L     &kp F     &none
-&trans  &kp LGUI   &kp LALT         &kp LSHFT            &kp LCTRL     &kp PG_DN    &none      &kp LCTRL      &kp LSHFT  &kp LALT  &kp LGUI  &none
-                                    &none                &kp BSPC      &kp DEL      &none      &none          &none
-                                                         &kp LC(BSPC)  &tog 4       &none      &none
+&trans  &kp LC(A)  &mt LC(X) LC(C)  &mt LC(LS(V)) LC(V)  &kp LC(Z)     &kp LC(Y)    &none  &none      &none      &none     &none     &none
+&trans  &none      &none            &kp UP               &none         &kp PG_UP    &none  &none      &none      &none     &none     &none
+&trans  &kp HOME   &kp LEFT         &kp DOWN             &kp RIGHT     &kp END      &none  &kp LCTRL  &kp LSHFT  &kp LALT  &kp LGUI  &none
+&trans  &kp LGUI   &kp LALT         &kp LSHFT            &kp LCTRL     &kp PG_DN    &none  &none      &none      &none     &none     &none
+                                    &none                &kp BSPC      &kp DEL      &none  &none      &none
+                                                         &kp LC(BSPC)  &tog 4       &none  &none
             >;
         };
 
@@ -90,7 +90,7 @@
 &kp LALT   &kp F         &kp A         &kp S         &kp D         &kp G        &kp H      &kp J     &kp K      &kp L     &kp SEMI  &kp C_PP
 &kp LCTRL  &kp Z         &kp X         &kp C         &kp V         &kp B        &kp N      &kp M     &kp COMMA  &kp DOT   &kp FSLH  &kp C_VOL_DN
                                        &mo 6         &kp LCTRL     &kp LSHFT    &kp DEL    &kp BSPC  &none
-                                                     &kp LALT      &kp SPACE    &none      &none
+                                                     &kp LALT      &kp SPACE    &tog 5     &none
             >;
         };
 
