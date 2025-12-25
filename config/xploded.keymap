@@ -87,21 +87,21 @@
             bindings = <
 &kp ESC    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5       &kp GRAVE  &none     &none      &kp SEMI  &kp SQT   &none
 &kp TAB    &kp Q         &kp E         &kp W         &kp R         &kp T        &kp Y      &kp U     &kp I      &kp O     &kp P     &kp C_VOLUME_UP
-&kp LSHFT  &kp LCTRL     &kp A         &kp S         &kp D         &kp F        &kp H      &kp J     &kp K      &kp L     &kp SEMI  &kp C_PP
+&kp ENTER  &kp G         &kp A         &kp S         &kp D         &kp F        &kp H      &kp J     &kp K      &kp L     &kp SEMI  &kp C_PP
 &kp I      &kp Z         &kp X         &kp C         &kp V         &kp B        &kp N      &kp M     &kp COMMA  &kp DOT   &kp FSLH  &kp C_VOL_DN
-                                       &mo 6         &kp SPACE     &kp ENTER    &kp DEL    &kp BSPC  &none
-                                                     &kp LEFT_ALT  &kp M        &tog 5     &none
+                                       &mo 6         &kp LSHFT     &kp LCTRL    &kp DEL    &kp BSPC  &none
+                                                     &kp SPACE     &kp LALT     &tog 5     &none
             >;
         };
 
         game_raise {
             bindings = <
-&none  &kp F1  &kp F2    &kp F4    &kp F5     &kp F6    &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&none  &none   &none     &kp UP    &none      &none     &none   &none   &none   &none    &none    &none
-&none  &none   &kp LEFT  &kp DOWN  &kp RIGHT  &kp G     &none   &none   &none   &none    &none    &none
-&none  &none   &none     &none     &none      &none     &none   &none   &none   &none    &none    &none
-                         &none     &none      &none     &none   &none   &none
-                                   &none      &none     &none   &none
+&none  &kp F1  &kp F2    &kp F3    &kp F4     &kp F5    &kp F6           &kp F7        &kp F8     &kp F9     &kp F10    &kp F12
+&none  &none   &none     &kp UP    &none      &none     &kp KP_MULTIPLY  &kp KP_PLUS   &kp KP_N7  &kp KP_N8  &kp KP_N9  &none
+&none  &none   &kp LEFT  &kp DOWN  &kp RIGHT  &kp G     &kp KP_DIVIDE    &kp KP_MINUS  &kp KP_N4  &kp KP_N5  &kp KP_N6  &none
+&none  &none   &none     &none     &none      &none     &kp CARET        &kp KP_N0     &kp KP_N1  &kp KP_N2  &kp KP_N3  &none
+                         &none     &none      &none     &none            &none         &none
+                                   &none      &none     &none            &none
             >;
         };
 
